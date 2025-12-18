@@ -32,6 +32,73 @@ Multi-provider AI chatbot for WhatsApp Business API with support for Groq (free)
 - **Deployment**: Docker, Docker Compose
 - **Testing**: ngrok for local webhook development
 
+## Quick Test (No WhatsApp Required!)
+
+Want to test the AI without setting up WhatsApp? Use the interactive terminal chat:
+
+### 1. Get Groq API Key (Free, 2 minutes)
+
+1. Visit https://console.groq.com
+2. Sign up (no credit card required)
+3. API Keys → Create API Key
+4. Copy the key
+
+### 2. Configure and Run
+
+```bash
+# Clone the repository
+git clone https://github.com/semihalkanli/whatsapp-ai-chatbot.git
+cd whatsapp-ai-chatbot
+
+# Create .env file
+cp .env.example .env
+
+# Edit .env and add your Groq API key
+nano .env
+# Set: GROQ_API_KEY=your_key_here
+
+# Install dependencies (use your existing Python environment)
+pip install -r requirements.txt
+
+# Start interactive chat!
+python3 chat_terminal.py
+```
+
+### 3. Chat with the AI
+
+```
+======================================================================
+🤖 WhatsApp AI Chatbot - Interactive Terminal Chat
+======================================================================
+
+Commands:
+  - Type your message and press Enter to chat
+  - Exit: 'exit', 'quit', 'q' or Ctrl+C
+  - Clear history: 'clear', 'reset'
+======================================================================
+  AI Provider: Groq
+======================================================================
+
+💬 You: Hello! How are you?
+🤖 Bot: Hello! I'm doing well, thank you! How can I assist you today?
+
+💬 You: Tell me a joke
+🤖 Bot: Why did the programmer quit his job? Because he didn't get arrays! 😄
+
+💬 You: exit
+👋 Goodbye!
+📊 Total messages: 2
+```
+
+**Features:**
+- ✅ No WhatsApp setup needed
+- ✅ Test all AI providers (Groq, OpenAI, Claude)
+- ✅ Conversation history maintained
+- ✅ Multi-language support
+- ✅ Completely free with Groq
+
+---
+
 ## Quick Start with Docker
 
 ### Prerequisites
